@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Anuu Jii 💗</title>
+<style>
+:root{--pink:#ff5fa2;--deep:#d63384;--pale:#fff0f7}
+*{box-sizing:border-box}
+body{margin:0;font-family:Georgia,serif;color:#71304f;background:linear-gradient(135deg,#fff0f7,#ffe0ee,#fff7fb);overflow-x:hidden}
+main{max-width:760px;margin:auto;padding:28px 18px 60px;text-align:center}
+.hero{min-height:88vh;display:flex;flex-direction:column;justify-content:center;align-items:center}
+h1{font-size:clamp(2.3rem,8vw,4.6rem);color:var(--deep);margin:12px 0;text-shadow:0 3px 15px #ffb6d4}
+h2{color:var(--deep)}
+p{font-size:1.12rem;line-height:1.8}
+.sub{font-family:Arial,sans-serif;letter-spacing:2px;text-transform:uppercase;color:#b34b7c}
+.heart{font-size:2rem;animation:pulse 1.3s infinite}
+@keyframes pulse{50%{transform:scale(1.25)}}
+button,.btn{border:0;border-radius:999px;background:linear-gradient(90deg,#ff5fa2,#e83e8c);color:white;padding:14px 24px;font-size:1rem;cursor:pointer;text-decoration:none;display:inline-block;box-shadow:0 8px 22px #e83e8c44;margin:10px}
+.card{background:#ffffffc9;border:1px solid #ffc5df;border-radius:26px;padding:25px;margin:24px 0;box-shadow:0 12px 35px #c44c8020}
+.photo{width:100%;max-height:520px;object-fit:cover;border-radius:20px;border:5px solid white;box-shadow:0 8px 25px #a93b6c30}
+.letter{text-align:left;white-space:pre-line}
+.hidden{display:none}
+footer{padding:30px;color:#a44a76}
+.float{position:fixed;bottom:-30px;opacity:.7;pointer-events:none;animation:rise 8s linear infinite}
+@keyframes rise{to{transform:translateY(-110vh) rotate(25deg);opacity:0}}
+</style>
+</head>
+<body>
+<main>
+<section class="hero">
+<div class="heart">💗 💕 💗</div>
+<div class="sub">A little surprise made with love</div>
+<h1>Happy Birthday<br>My Love 💋</h1>
+<h2>Anuu Jii 👑</h2>
+<p>25 November 2026</p>
+<button onclick="document.getElementById('surprise').classList.remove('hidden');document.getElementById('surprise').scrollIntoView({behavior:'smooth'})">Open Your Surprise 🎁</button>
+<p class="heart">♡</p>
+</section>
+<section id="surprise" class="hidden">
+<div class="card">
+<h2>For My Princess 💖</h2>
+<img class="photo" src="assets/our-memory.jpg" alt="A special memory together">
+<p class="sub">One of my favourite memories</p>
+</div>
+<div class="card">
+<h2>Ek chhoti si baat... 💌</h2>
+<p class="letter">Happy Birthday My Love 💋
+
+Merii life me aane ke liyee Thank You Yrrr. Pta nhi aagar aap meri life nhi hote toh mera kyaa hota yrrr. Bss aaise hii mere sath hamesha rehna orrr hame bade hokar shadi bhi krni hai naaa. Bss mera sath denaa orr ham shadi jarur karenge samjeee naaaa.
+
+Orr haaa, bss maine thoda bohot gussa kiya ya fir thoda data toh bura mt lagana. Woh toh bss mera haq jatana haii. Or haa tum bhi jyada gussa mtt krnaa — gussa kro lekin jyada nhi.
+
+Life me kabhi bhi aapke aakhon me aasu nhi aane chayyeee. Aagar aapke aakhon me aasu aate hai toh muze bohot bura lagta hai yrrr, sachh mai yrrr.
+
+Hamesha khush rehna, meri princess. ❤️</p>
+<p style="text-align:right">Forever yours, with lots of love 💗</p>
+</div>
+<div class="card">
+<h2>One more little surprise 🎶</h2>
+<p>Play our birthday mood song:</p>
+<a class="btn" href="https://www.youtube.com/results?search_query=Dilruba+Ban+song" target="_blank" rel="noopener">Dilruba Ban 🎵</a>
+<p style="font-size:.9rem">Opens the song search on YouTube. You can play it there.</p>
+</div>
+<div class="card">
+<h2>Happy Birthday, Princess! 🎂</h2>
+<p>May your day be full of smiles, love and beautiful memories.</p>
+<div class="heart">💗 💗 💗</div>
+</div>
+</section>
+<footer>Made with love, just for Anuu Jii 💞</footer>
+</main>
+<script>
+for(let i=0;i<18;i++){let s=document.createElement('span');s.className='float';s.textContent=['💗','💕','♡','💖'][i%4];s.style.left=(Math.random()*100)+'%';s.style.animationDelay=(Math.random()*8)+'s';s.style.fontSize=(16+Math.random()*22)+'px';document.body.appendChild(s)}
+</script>
+</body></html>
